@@ -9,6 +9,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-outfit: var(--font-outfit);
+  --font-big-shoulders: var(--font-big-shoulders);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -120,4 +121,92 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.box {
+  --b: 2px; /* thickness of the border */
+  --c: #000000bf; /* color of the border */
+  --w: 10px; /* width of border */
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background: conic-gradient(
+        from 90deg at top var(--b) left var(--b),
+        var(--_g)
+      )
+      0 0 / var(--_p),
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
+      var(--_p),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% /
+      var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+      100% 100% / var(--_p);
+
+  /*Irrelevant code*/
+  /* width: 200px; */
+  /* height: 100px; */
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin: 5px;
+  display: inline-flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box-mobile {
+  --b: 2px; /* thickness of the border */
+  --c: #000000bf; /* color of the border */
+  --w: 10px; /* width of border */
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background: conic-gradient(
+        from 90deg at top var(--b) left var(--b),
+        var(--_g)
+      )
+      0 0 / var(--_p),
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
+      var(--_p),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% /
+      var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
+      100% 100% / var(--_p);
+
+  /*Irrelevant code*/
+  /* width: 200px; */
+  /* height: 100px; */
+  box-sizing: border-box;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin: 5px;
+  display: inline-flex;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hacker-house {
+  background-image: url("/assets/hacker-house/banner.svg"); /* Path relative to the public folder */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  /* background-attachment: fixed; Keeps the background fixed during scrolling */
+}
+
+.award-ceremony {
+  background-image: url("/assets/award-ceremony/banner.svg"); /* Path relative to the public folder */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  /* background-attachment: fixed; Keeps the background fixed during scrolling */
 }

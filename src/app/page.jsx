@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
+import HackerHouse from "@/components/HackerHouse";
+import AwardCeremony from "@/components/AwardCeremony";
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <HackerHouse />
+        <AwardCeremony />
       </main>
     </div>
   );
