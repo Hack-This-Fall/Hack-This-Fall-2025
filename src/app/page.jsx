@@ -3,6 +3,8 @@ import HeroSection from "../components/HeroSection";
 import BuildStation from "../components/BuildStation";
 import HackerHouse from "@/components/HackerHouse";
 import AwardCeremony from "@/components/AwardCeremony";
+import VirtualHackathon from "../components/VirtualHackathon";
+import Partners from "@/components/Partner";
 
 export default function Home() {
   return (
@@ -10,9 +12,11 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <VirtualHackathon />
         <BuildStation />
         <HackerHouse />
         <AwardCeremony />
+        <Partners />
       </main>
     </div>
   );
