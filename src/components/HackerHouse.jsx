@@ -4,7 +4,7 @@ export default function HackerHouse() {
   return (
     <>
       {/* Desktop */}
-      <div className="hidden md:block w-screen bg-red-300 max-w-[1500px] mx-auto aspect-[1513/874] h-auto hacker-house">
+      <div className="hidden md:block w-screen bg-red-300 mx-auto aspect-[1513/874] h-auto hacker-house">
         <div className="container mx-auto relative h-full w-full">
           <div className="h-full">
             <div className="top-bar flex justify-between px-6 pt-20">
