@@ -3,26 +3,26 @@ import { Button } from '@/components/ui/button';
 export default function VirtualHackathonHero() {
   return (
     <section className="bg-[#180629] pt-10 relative overflow-hidden pb-[96px]">
-      <div className="container mx-auto px-2 sm:px-6 relative z-10">
+      <div className="container mx-auto px-2 sm:px-0 relative z-10">
         {/* Top Section: Headline, Subtitle, and Card */}
-        <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-10 sm:gap-16 pt-10 pb-0 relative">
+        <div className="flex flex-col sm:flex-row items-center md:items-start justify-between gap-10 sm:gap-16 pt-10 pb-0 relative">
           {/* Left: SVG Heading and subtitle */}
-          <div className="flex-1 flex flex-col items-center sm:items-start sm:ml-16">
+          <div className="flex-1 flex flex-col sm:items-start sm:ml-16">
             <img
               src="/assets/virtual-hackathon/your-idea.svg"
               alt="Your Idea A MONTH TO BUILD IT"
-              className="w-full max-w-[520px] h-auto"
+              className="w-full max-w-[300px] sm:max-w-[520px] h-auto"
               draggable={false}
             />
-            <p className="text-white font-outfit font-normal text-[24px] leading-[100%] text-center ml-19 mt-6 max-w-[520px]">
+            <p className="text-white font-outfit font-normal text-[18px] sm:text-[24px] text-center sm:ml-19 mt-6 max-w-[520px]">
               Ready to Chase It? We'll Help You Catch It!
             </p>
             {/* Card centered below subtitle on mobile, hidden on desktop */}
-            <div className="w-full flex justify-center mt-8 sm:hidden">
+            <div className="w-[90%] flex justify-start mt-8 sm:hidden">
               <img
                 src="/assets/virtual-hackathon/virtual-hackathon.svg"
                 alt="Virtual Hackathon"
-                className="w-[220px] h-[220px]"
+                className="w-full sm:max-w-[220px] h-auto"
                 draggable={false}
               />
             </div>
@@ -64,21 +64,21 @@ export default function VirtualHackathonHero() {
               <img
                 src="/assets/virtual-hackathon/virtual-box.svg"
                 alt="Virtual"
-                className="h-[72px] w-full sm:w-auto"
+                className="h-[72px] w-[60%] sm:w-auto"
                 draggable={false}
               />
               {/* Box 2 SVG */}
               <img
                 src="/assets/virtual-hackathon/november-box.svg"
                 alt="November"
-                className="h-[72px] w-full sm:w-auto"
+                className="h-[72px] w-[60%] sm:w-auto"
                 draggable={false}
               />
               {/* Box 3 SVG */}
               <img
                 src="/assets/virtual-hackathon/open-for-all-box.svg"
                 alt="Open for all"
-                className="h-[72px] w-full sm:w-auto"
+                className="h-[72px] w-[60%] sm:w-auto"
                 draggable={false}
               />
             </div>

@@ -1,14 +1,14 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function HackerHouse() {
   return (
     <>
       {/* Desktop */}
-      <div className="hidden md:block w-screen bg-red-300 mx-auto aspect-[1513/874] h-auto hacker-house">
-        <div className="container mx-auto relative h-full w-full">
+      <div className="hidden md:block w-full bg-red-300 mx-auto aspect-[1513/874] h-auto overflow-hidden bg-gradient-to-b from-[rgba(254,149,57,1)] to-[rgba(255,204,0,1)]">
+        <div className="container mx-auto relative h-full w-full hacker-house relative">
           <div className="h-full">
-            <div className="top-bar flex justify-between px-6 pt-20">
-              <div className="box font-big-shoulders flex gap-x-2 items-center">
+            <div className="top-bar flex justify-between px-6 pt-20 z-10">
+              <div className="box font-big-shoulders flex gap-x-2 items-center z-10">
                 <Image
                   src={'/assets/hacker-house/location-pin.png'}
                   width={20}
@@ -17,7 +17,7 @@ export default function HackerHouse() {
                 />
                 <span className="text-xl font-bold">BENGALURU</span>
               </div>
-              <div className="box font-big-shoulders flex gap-x-2 items-center">
+              <div className="box font-big-shoulders flex gap-x-2 items-center z-10">
                 <Image
                   src={'/assets/hacker-house/remote.png'}
                   width={20}
@@ -56,6 +56,16 @@ export default function HackerHouse() {
               </div>
             </div>
           </div>
+          <img
+            className="absolute top-[-385px] left-[-385px] w-[670px] object-cover z-0"
+            alt="Decorative mountain silhouette"
+            src="/assets/build-station/mountain-yellow.svg"
+          />
+          <img
+            className="absolute top-[-385px] right-[-385px] w-[670px] object-cover z-0"
+            alt="Decorative mountain silhouette"
+            src="/assets/build-station/mountain-yellow.svg"
+          />
         </div>
       </div>
       {/* Mobile */}

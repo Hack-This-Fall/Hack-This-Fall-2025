@@ -39,7 +39,7 @@ const cities = [
 export default function BuildStation() {
   return (
     <section className="w-full mx-auto bg-[linear-gradient(180deg,rgba(157,51,251,1)_0%,rgba(255,150,56,1)_100%)] overflow-hidden">
-      <div className="w-full relative mx-auto py-24 px-[108px] flex flex-col items-center gap-[72px]">
+      <div className="w-full container relative mx-auto py-24 sm:px-[108px] flex flex-col items-center gap-[72px]">
         <header className="flex flex-col w-full max-w-[564.05px] items-center gap-6 relative z-10">
           <div className="relative w-full">
             <img
@@ -105,14 +105,14 @@ export default function BuildStation() {
         </div>
 
         <img
-          className="absolute bottom-0 left-0 w-[385px] object-cover z-0"
+          className="absolute bottom-[-405px] left-[-385px] w-[670px] object-cover z-0"
           alt="Decorative mountain silhouette"
-          src="/assets/build-station/mountain-left.svg"
+          src="/assets/build-station/mountain-orange.svg"
         />
         <img
-          className="absolute bottom-0 right-0 w-[385px] object-cover z-0"
+          className="absolute bottom-[-405px] right-[-385px] w-[670px] object-cover z-0"
           alt="Decorative mountain silhouette"
-          src="/assets/build-station/mountain-right.svg"
+          src="/assets/build-station/mountain-orange.svg"
         />
       </div>
     </section>
