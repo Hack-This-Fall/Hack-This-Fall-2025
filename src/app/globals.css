@@ -210,3 +210,11 @@
   background-repeat: no-repeat; /* Prevents image repetition */
   /* background-attachment: fixed; Keeps the background fixed during scrolling */
 }
+
+.award-ceremony-mob {
+  background-image: url("/assets/award-ceremony/mob-banner.svg"); /* Path relative to the public folder */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  /* background-attachment: fixed; Keeps the background fixed during scrolling */
+}

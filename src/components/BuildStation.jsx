@@ -39,7 +39,7 @@ const cities = [
 export default function BuildStation() {
   return (
     <section className="w-full mx-auto bg-[linear-gradient(180deg,rgba(157,51,251,1)_0%,rgba(255,150,56,1)_100%)] overflow-hidden">
-      <div className="container relative mx-auto py-24 px-[108px] flex flex-col items-center gap-[72px]">
+      <div className="w-full relative mx-auto py-24 px-[108px] flex flex-col items-center gap-[72px]">
         <header className="flex flex-col w-full max-w-[564.05px] items-center gap-6 relative z-10">
           <div className="relative w-full">
             <img
