@@ -4,12 +4,12 @@ import Image from "next/image";
 export default function AwardCeremony() {
   return (
     <>
-      <div className="hidden md:block w-screen bg-red-300 max-w-[1500px] mx-auto aspect-[1512/937] h-auto award-ceremony">
+      <div className="hidden md:block w-screen bg-red-300 container mx-auto aspect-[1512/937] h-auto award-ceremony">
         <div className="container mx-auto px-60 flex items-center justify-center min-h-screen">
           <div className="flex flex-col items-center">
             <div className="relative flex flex-col">
               <img
-                src={"/assets/award-ceremony/main.png"}
+                src={'/assets/award-ceremony/main.png'}
                 className="mx-auto -mt-14"
                 alt="Award Ceremony"
               />

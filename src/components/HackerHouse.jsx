@@ -4,13 +4,13 @@ export default function HackerHouse() {
   return (
     <>
       {/* Desktop */}
-      <div className="hidden md:block w-screen bg-red-300 max-w-[1500px] mx-auto aspect-[1513/874] h-auto hacker-house">
+      <div className="hidden md:block w-screen bg-red-300 container mx-auto aspect-[1513/874] h-auto hacker-house">
         <div className="container mx-auto relative h-full w-full">
           <div className="h-full">
             <div className="top-bar flex justify-between px-6 pt-20">
               <div className="box font-big-shoulders flex gap-x-2 items-center">
                 <Image
-                  src={"/assets/hacker-house/location-pin.png"}
+                  src={'/assets/hacker-house/location-pin.png'}
                   width={20}
                   height={20}
                   alt="location"
@@ -19,7 +19,7 @@ export default function HackerHouse() {
               </div>
               <div className="box font-big-shoulders flex gap-x-2 items-center">
                 <Image
-                  src={"/assets/hacker-house/remote.png"}
+                  src={'/assets/hacker-house/remote.png'}
                   width={20}
                   height={20}
                   alt="in person"
@@ -46,7 +46,7 @@ export default function HackerHouse() {
                 </div>
                 <div className="box font-big-shoulders flex gap-x-2 items-center !mt-12">
                   <Image
-                    src={"/assets/hacker-house/calender.png"}
+                    src={'/assets/hacker-house/calender.png'}
                     width={20}
                     height={20}
                     alt="calendar"
@@ -80,7 +80,7 @@ export default function HackerHouse() {
             <div className="flex justify-center gap-x-4 w-full text-sm font-bold font-big-shoulders !mt-8">
               <div className="box-mobile flex items-center gap-2">
                 <Image
-                  src={"/assets/hacker-house/location-pin.png"}
+                  src={'/assets/hacker-house/location-pin.png'}
                   width={20}
                   height={20}
                   alt="location"
@@ -89,7 +89,7 @@ export default function HackerHouse() {
               </div>
               <div className="box-mobile flex items-center gap-2">
                 <Image
-                  src={"/assets/hacker-house/remote.png"}
+                  src={'/assets/hacker-house/remote.png'}
                   width={20}
                   height={20}
                   alt="in person"
@@ -99,7 +99,7 @@ export default function HackerHouse() {
             </div>
             <div className="box-mobile flex items-center gap-2 font-big-shoulders text-sm font-bold !mt-4">
               <Image
-                src={"/assets/hacker-house/calender.png"}
+                src={'/assets/hacker-house/calender.png'}
                 width={20}
                 height={20}
                 alt="calendar"
