@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -16,19 +17,27 @@ export default function HeroSection() {
           an epic showdown!
         </p>
         <div className="flex gap-4 justify-center sm:flex-col sm:flex-row px-4 sm:px-0 mt-10 sm:mt-12">
-          <Button className="bg-[#ff9933] border-2 border-black text-black font-semibold p-6 text-md hover:bg-[#e6852e] transition-colors rounded-none font-outfit">
-            Join Hackathon
-          </Button>
-          <Button
-            variant="outline"
-            className="border-2 border-black bg-white text-black font-semibold p-6 text-md hover:bg-gray-50 transition-colors rounded-none font-outfit"
-          >
-            Join Build Station
-          </Button>
+          <Link href="https://hackthisfall.devfolio.co/" target="_blank">
+            <Button className="bg-[#ff9933] border-2 border-black cursor-pointer text-black font-semibold p-6 text-md hover:bg-[#e6852e] transition-colors rounded-none font-outfit">
+              Join Hackathon
+            </Button>
+          </Link>
+          <Link href="https://luma.com/hackthisfall-events" target="_blank">
+            <Button
+              variant="outline"
+              className="border-2 border-black bg-white cursor-pointer text-black font-semibold p-6 text-md hover:bg-gray-50 transition-colors rounded-none font-outfit"
+            >
+              Join Build Station
+            </Button>
+          </Link>
         </div>
-        <div className="text-center justify-start text-gray-600 text-base font-semibold font-outfit underline mt-6">
+        <a
+          href="mailto:sponsorships@hackthisfall.tech"
+          target="_blank"
+          className="text-center justify-start text-gray-600 text-base font-semibold font-outfit underline mt-6"
+        >
           Interested in Partnering?
-        </div>
+        </a>
       </div>
     </section>
   );

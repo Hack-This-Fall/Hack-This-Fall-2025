@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function VirtualHackathonHero() {
   return (
@@ -33,7 +34,7 @@ export default function VirtualHackathonHero() {
               <img
                 src="/assets/virtual-hackathon/virtual-hackathon.svg"
                 alt="Virtual Hackathon"
-                className="w-40 h-72 sm:w-[600px] sm:h-[400px]"
+                className="w-40 h-72 sm:w-auto sm:h-[400px]"
                 draggable={false}
               />
             </div>
@@ -55,9 +56,9 @@ export default function VirtualHackathonHero() {
             opacity: 0.3,
           }}
         />
-        <div className="container mx-auto px-2 sm:px-6 py-[24px] relative z-10">
+        <div className="container mx-auto px-2 sm:px-0 py-[24px] relative z-10">
           {/* Responsive flex: column on mobile, row on desktop */}
-          <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-6 px-15">
             {/* SVG Boxes */}
             <div className="flex flex-col sm:flex-row items-center gap-6 w-full sm:w-auto">
               {/* Box 1 SVG */}
@@ -84,9 +85,11 @@ export default function VirtualHackathonHero() {
             </div>
             {/* Join Now Button */}
             <div className="flex items-center w-full sm:w-auto justify-center sm:ml-[285px] mt-6 sm:mt-0">
-              <Button className="bg-[#ff9933] border-2 border-black text-black font-semibold text-[24px] px-[24px] h-[72px] hover:bg-[#e6852e] transition-colors rounded-none font-outfit flex items-center justify-center min-w-[148px] w-[220px] mx-auto sm:w-auto">
-                Join Hackathon
-              </Button>
+              <Link href="https://hackthisfall.devfolio.co/" target="_blank">
+                <Button className="bg-[#ff9933] border-2 border-black cursor-pointer text-black font-semibold text-[24px] px-[24px] h-[72px] hover:bg-[#e6852e] transition-colors rounded-none font-outfit flex items-center justify-center min-w-[148px] w-[220px] mx-auto sm:w-auto">
+                  Join Hackathon
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

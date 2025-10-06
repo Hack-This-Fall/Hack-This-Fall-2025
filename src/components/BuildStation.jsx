@@ -1,6 +1,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
 import React from 'react';
 
 const cities = [
@@ -9,30 +10,35 @@ const cities = [
     subtitle: 'City of Dreams',
     date: '08.11.25',
     image: '/assets/build-station/cities/mumbai.png',
+    link: 'https://luma.com/6kk2l88e',
   },
   {
     name: 'Ahmedabad',
     subtitle: 'City of Heritage',
     date: '09.11.25',
     image: '/assets/build-station/cities/ahmedabad.png',
+    link: 'https://luma.com/wghku6rh',
   },
   {
     name: 'Delhi',
     subtitle: 'City of Hearts',
     date: '15.11.25',
     image: '/assets/build-station/cities/delhi.png',
+    link: 'https://luma.com/hg0g2gwa',
   },
   {
     name: 'Kolkata',
     subtitle: 'City of Joy',
     date: '16.11.25',
     image: '/assets/build-station/cities/kolkata.png',
+    link: 'https://luma.com/g2r1hz70',
   },
   {
     name: 'Hyderabad',
     subtitle: 'City of Pearls',
     date: '22.11.25',
     image: '/assets/build-station/cities/hyderabad.png',
+    link: 'https://luma.com/utv77z3v',
   },
 ];
 
@@ -101,11 +107,15 @@ export default function BuildStation() {
                   </div>
                 </CardContent>
 
-                <Button className="flex w-[290px] items-center justify-center gap-2.5 px-6 py-3 h-auto bg-[#ff9933] border-[2.05px] border-solid border-black rounded-none hover:bg-[#ff9933]/90">
+                <Link
+                  href={city.link}
+                  target="_blank"
+                  className="flex w-[290px] items-center justify-center gap-2.5 px-6 py-3 h-auto bg-[#ff9933] border-[2.05px] border-solid border-black rounded-none hover:bg-[#ff9933]/90"
+                >
                   <span className="relative w-fit mt-[-2.05px] [font-family:'Big_Shoulders_Display-Black',Helvetica] font-black text-black text-base text-center tracking-[0] leading-[normal] whitespace-nowrap">
                     Apply Now
                   </span>
-                </Button>
+                </Link>
               </Card>
             ))}
           </div>
@@ -154,11 +164,15 @@ export default function BuildStation() {
                   </div>
                 </CardContent>
 
-                <Button className="flex w-[290px] items-center justify-center gap-2.5 px-6 py-3 h-auto bg-[#ff9933] border-[2.05px] border-solid border-black rounded-none hover:bg-[#ff9933]/90">
+                <Link
+                  href={city.link}
+                  target="_blank"
+                  className="flex w-[290px] items-center justify-center gap-2.5 px-6 py-3 h-auto bg-[#ff9933] border-[2.05px] border-solid border-black rounded-none hover:bg-[#ff9933]/90"
+                >
                   <span className="relative w-fit mt-[-2.05px] [font-family:'Big_Shoulders_Display-Black',Helvetica] font-black text-black text-base text-center tracking-[0] leading-[normal] whitespace-nowrap">
                     Apply Now
                   </span>
-                </Button>
+                </Link>
               </Card>
             ))}
           </div>
