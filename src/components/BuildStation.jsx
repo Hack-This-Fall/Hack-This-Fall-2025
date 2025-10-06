@@ -6,31 +6,31 @@ import React from 'react';
 const cities = [
   {
     name: 'Mumbai',
-    subtitle: 'City of Legacy',
+    subtitle: 'City of Dreams',
     date: '08.11.25',
     image: '/assets/build-station/cities/mumbai.png',
   },
   {
     name: 'Ahmedabad',
-    subtitle: 'City of Legacy',
+    subtitle: 'City of Heritage',
     date: '09.11.25',
     image: '/assets/build-station/cities/ahmedabad.png',
   },
   {
     name: 'Delhi',
-    subtitle: 'City of Legacy',
+    subtitle: 'City of Hearts',
     date: '15.11.25',
     image: '/assets/build-station/cities/delhi.png',
   },
   {
     name: 'Kolkata',
-    subtitle: 'City of Legacy',
+    subtitle: 'City of Joy',
     date: '16.11.25',
     image: '/assets/build-station/cities/kolkata.png',
   },
   {
     name: 'Hyderabad',
-    subtitle: 'City of Legacy',
+    subtitle: 'City of Pearls',
     date: '22.11.25',
     image: '/assets/build-station/cities/hyderabad.png',
   },
@@ -50,9 +50,9 @@ export default function BuildStation() {
           </div>
 
           <p className="relative self-stretch font-outfit font-normal text-white text-2xl text-center tracking-[0] leading-[normal]">
-            Get face-to-face with local builders at Build Stations! <br />
-            Join us in your city to connect, collaborate, and kick-start your
-            hackathon project.
+            Bring hackathon energy to life at Build Stations near you!
+            <br /> Step out of the screen to connect with builders and
+            collaborate in person.
           </p>
         </header>
 
@@ -103,7 +103,7 @@ export default function BuildStation() {
 
                 <Button className="flex w-[290px] items-center justify-center gap-2.5 px-6 py-3 h-auto bg-[#ff9933] border-[2.05px] border-solid border-black rounded-none hover:bg-[#ff9933]/90">
                   <span className="relative w-fit mt-[-2.05px] [font-family:'Big_Shoulders_Display-Black',Helvetica] font-black text-black text-base text-center tracking-[0] leading-[normal] whitespace-nowrap">
-                    Apply
+                    Apply Now
                   </span>
                 </Button>
               </Card>
@@ -156,7 +156,7 @@ export default function BuildStation() {
 
                 <Button className="flex w-[290px] items-center justify-center gap-2.5 px-6 py-3 h-auto bg-[#ff9933] border-[2.05px] border-solid border-black rounded-none hover:bg-[#ff9933]/90">
                   <span className="relative w-fit mt-[-2.05px] [font-family:'Big_Shoulders_Display-Black',Helvetica] font-black text-black text-base text-center tracking-[0] leading-[normal] whitespace-nowrap">
-                    Apply
+                    Apply Now
                   </span>
                 </Button>
               </Card>

@@ -15,7 +15,7 @@ export default function VirtualHackathonHero() {
               draggable={false}
             />
             <p className="text-white font-outfit font-normal text-[18px] sm:text-[24px] text-center sm:ml-19 mt-6 max-w-[520px]">
-              Ready to Chase It? We'll Help You Catch It!
+              Let's turn this November into something epic.
             </p>
             {/* Card centered below subtitle on mobile, hidden on desktop */}
             <div className="w-[90%] flex justify-start mt-8 sm:hidden">
@@ -85,7 +85,7 @@ export default function VirtualHackathonHero() {
             {/* Join Now Button */}
             <div className="flex items-center w-full sm:w-auto justify-center sm:ml-[285px] mt-6 sm:mt-0">
               <Button className="bg-[#ff9933] border-2 border-black text-black font-semibold text-[24px] px-[24px] h-[72px] hover:bg-[#e6852e] transition-colors rounded-none font-outfit flex items-center justify-center min-w-[148px] w-[220px] mx-auto sm:w-auto">
-                Join Now
+                Join Hackathon
               </Button>
             </div>
           </div>

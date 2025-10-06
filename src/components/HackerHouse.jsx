@@ -4,8 +4,8 @@ export default function HackerHouse() {
   return (
     <>
       {/* Desktop */}
-      <div className="hidden md:block w-full bg-red-300 mx-auto aspect-[1513/874] h-auto overflow-hidden bg-gradient-to-b from-[rgba(254,149,57,1)] to-[rgba(255,204,0,1)]">
-        <div className="container mx-auto relative h-full w-full hacker-house relative">
+      <div className="hidden md:block w-full bg-red-300 mx-auto aspect-[16/10] h-auto overflow-hidden bg-gradient-to-b from-[rgba(254,149,57,1)] to-[rgba(255,204,0,1)]">
+        <div className="container mx-auto h-full w-full hacker-house aspect-[16/10] relative">
           <div className="h-full">
             <div className="top-bar flex justify-between px-6 pt-20 z-10">
               <div className="box font-big-shoulders flex gap-x-2 items-center z-10">

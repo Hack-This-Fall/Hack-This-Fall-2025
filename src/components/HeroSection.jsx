@@ -11,9 +11,9 @@ export default function HeroSection() {
           priority
         />
         <p className="w-[90%] sm:w-[60%] text-center justify-start text-lg sm:text-2xl mt-8 font-normal font-outfit">
-          We've been building, learning, and growing together for half a
-          decade!Join the month-long sprint with thousands of builders,
-          culminating in an epic finale!
+          We've been building, learning, and growing together for half a decade.
+          Join the month-long sprint with thousands of builders, leading up to
+          an epic showdown!
         </p>
         <div className="flex gap-4 justify-center sm:flex-col sm:flex-row px-4 sm:px-0 mt-10 sm:mt-12">
           <Button className="bg-[#ff9933] border-2 border-black text-black font-semibold p-6 text-md hover:bg-[#e6852e] transition-colors rounded-none font-outfit">
@@ -23,7 +23,7 @@ export default function HeroSection() {
             variant="outline"
             className="border-2 border-black bg-white text-black font-semibold p-6 text-md hover:bg-gray-50 transition-colors rounded-none font-outfit"
           >
-            Learn More
+            Join Build Station
           </Button>
         </div>
         <div className="text-center justify-start text-gray-600 text-base font-semibold font-outfit underline mt-6">
