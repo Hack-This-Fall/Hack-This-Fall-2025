@@ -1,16 +1,16 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function HackerHouse() {
   return (
     <>
       {/* Desktop */}
-      <div className="hidden md:block w-full bg-red-300 mx-auto aspect-[16/10] h-auto overflow-hidden bg-gradient-to-b from-[rgba(254,149,57,1)] to-[rgba(255,204,0,1)]">
-        <div className="container mx-auto h-full w-full hacker-house aspect-[16/10] relative">
-          <div className="h-full">
+      <div className="hidden md:block w-full bg-red-300 mx-auto h-auto overflow-hidden bg-gradient-to-b from-[rgba(254,149,57,1)] to-[rgba(255,204,0,1)]">
+        <div className="container mx-auto w-full hacker-house aspect-[16/10] relative">
+          <div className="">
             <div className="top-bar flex justify-between px-6 pt-20 z-10">
               <div className="box font-big-shoulders flex gap-x-2 items-center z-10">
                 <Image
-                  src={'/assets/hacker-house/location-pin.png'}
+                  src={"/assets/hacker-house/location-pin.png"}
                   width={20}
                   height={20}
                   alt="location"
@@ -19,7 +19,7 @@ export default function HackerHouse() {
               </div>
               <div className="box font-big-shoulders flex gap-x-2 items-center z-10">
                 <Image
-                  src={'/assets/hacker-house/remote.png'}
+                  src={"/assets/hacker-house/remote.png"}
                   width={20}
                   height={20}
                   alt="in person"
@@ -46,7 +46,7 @@ export default function HackerHouse() {
                 </div>
                 <div className="box font-big-shoulders flex gap-x-2 items-center !mt-12">
                   <Image
-                    src={'/assets/hacker-house/calender.png'}
+                    src={"/assets/hacker-house/calender.png"}
                     width={20}
                     height={20}
                     alt="calendar"
@@ -90,7 +90,7 @@ export default function HackerHouse() {
             <div className="flex justify-center gap-x-4 w-full text-sm font-bold font-big-shoulders !mt-8">
               <div className="box-mobile flex items-center gap-2">
                 <Image
-                  src={'/assets/hacker-house/location-pin.png'}
+                  src={"/assets/hacker-house/location-pin.png"}
                   width={20}
                   height={20}
                   alt="location"
@@ -99,7 +99,7 @@ export default function HackerHouse() {
               </div>
               <div className="box-mobile flex items-center gap-2">
                 <Image
-                  src={'/assets/hacker-house/remote.png'}
+                  src={"/assets/hacker-house/remote.png"}
                   width={20}
                   height={20}
                   alt="in person"
@@ -109,7 +109,7 @@ export default function HackerHouse() {
             </div>
             <div className="box-mobile flex items-center gap-2 font-big-shoulders text-sm font-bold !mt-4">
               <Image
-                src={'/assets/hacker-house/calender.png'}
+                src={"/assets/hacker-house/calender.png"}
                 width={20}
                 height={20}
                 alt="calendar"
