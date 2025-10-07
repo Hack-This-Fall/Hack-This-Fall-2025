@@ -18,14 +18,14 @@ export default function HeroSection() {
         </p>
         <div className="flex gap-4 justify-center sm:flex-col sm:flex-row px-4 sm:px-0 mt-10 sm:mt-12">
           <Link href="https://hackthisfall.devfolio.co/" target="_blank">
-            <Button className="bg-[#ff9933] border-2 border-black cursor-pointer text-black font-semibold p-6 text-md hover:bg-[#e6852e] transition-colors rounded-none font-outfit">
+            <Button className="bg-[#ff9933] border-2 border-black cursor-pointer text-black font-semibold p-5 sm:p-6 text-md hover:bg-[#e6852e] transition-colors rounded-none font-outfit">
               Join Hackathon
             </Button>
           </Link>
           <Link href="https://luma.com/hackthisfall-events" target="_blank">
             <Button
               variant="outline"
-              className="border-2 border-black bg-white cursor-pointer text-black font-semibold p-6 text-md hover:bg-gray-50 transition-colors rounded-none font-outfit"
+              className="border-2 border-black bg-white cursor-pointer text-black font-semibold p-5 sm:p-6 text-md hover:bg-gray-50 transition-colors rounded-none font-outfit"
             >
               Join Build Station
             </Button>

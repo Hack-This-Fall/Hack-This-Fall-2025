@@ -65,28 +65,28 @@ export default function VirtualHackathonHero() {
               <img
                 src="/assets/virtual-hackathon/virtual-box.svg"
                 alt="Virtual"
-                className="h-[72px] w-[60%] sm:w-auto"
+                className="sm:h-[72px] w-[80%] sm:w-[60%] sm:w-auto"
                 draggable={false}
               />
               {/* Box 2 SVG */}
               <img
                 src="/assets/virtual-hackathon/november-box.svg"
                 alt="November"
-                className="h-[72px] w-[60%] sm:w-auto"
+                className="sm:h-[72px] w-[80%] sm:w-[60%] sm:w-auto"
                 draggable={false}
               />
               {/* Box 3 SVG */}
               <img
                 src="/assets/virtual-hackathon/open-for-all-box.svg"
                 alt="Open for all"
-                className="h-[72px] w-[60%] sm:w-auto"
+                className="sm:h-[72px] w-[80%] sm:w-[60%] sm:w-auto"
                 draggable={false}
               />
             </div>
             {/* Join Now Button */}
             <div className="flex items-center w-full sm:w-auto justify-center sm:ml-[285px] mt-6 sm:mt-0">
               <Link href="https://hackthisfall.devfolio.co/" target="_blank">
-                <Button className="bg-[#ff9933] border-2 border-black cursor-pointer text-black font-semibold text-[24px] px-[24px] h-[72px] hover:bg-[#e6852e] transition-colors rounded-none font-outfit flex items-center justify-center min-w-[148px] w-[220px] mx-auto sm:w-auto">
+                <Button className="bg-[#ff9933] border-2 border-black cursor-pointer text-black font-semibold text-[18px] sm:text-[24px] p-6 sm:px-[24px] h-[65px] sm:h-[72px] hover:bg-[#e6852e] transition-colors rounded-none font-outfit flex items-center justify-center min-w-[148px] w-[220px] mx-auto sm:w-auto">
                   Join Hackathon
                 </Button>
               </Link>

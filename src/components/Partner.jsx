@@ -1,35 +1,26 @@
 import React from "react";
 
 const partnersData = [
-    {
-        title: "Title",
-        logos: [{ src: "", alt: "Auth0 by Okta" }],
-    },
-    {
-        title: "Diamond",
-        logos: [
-            { src: "", alt: "Appwrite" },
-            { src: "", alt: "GitHub" },
-        ],
-    },
-    {
-        title: "Platinum",
-        logos: [
-            { src: "", alt: "Appwrite" },
-            { src: "", alt: "Auth0 by Okta" },
-            { src: "", alt: "Databricks" },
-            { src: "", alt: "GitHub" },
-        ],
-    },
-    {
-        title: "Gold",
-        logos: [
-            { src: "", alt: "Appwrite" },
-            { src: "", alt: "Databricks" },
-            { src: "", alt: "Databricks" },
-            { src: "", alt: "GitHub" },
-        ],
-    },
+  {
+    title: 'Title',
+    logos: [{ src: '/assets/partners/vultr.svg', alt: 'Vultr' }],
+  },
+  {
+    title: 'Diamond',
+    logos: [{ src: '/assets/partners/bhindi.webp', alt: 'Bhindi AI' }],
+  },
+  {
+    title: 'Platinum',
+    logos: [
+      { src: '/assets/partners/github.png', alt: 'GitHub' },
+      { src: '/assets/partners/lingo.svg', alt: 'Lingo Dev' },
+      { src: '/assets/partners/devfolio.png', alt: 'Devfolio' },
+    ],
+  },
+  {
+    title: 'Gold',
+    logos: [{ src: '/assets/partners/apify.png', alt: 'Apify' }],
+  },
 ];
 
 function LogoRectangle({ children, large, medium }) {
@@ -98,7 +89,7 @@ export default function Frame() {
                 tierIndex === 0 ? (
                   <LogoRectangle key={logoIndex} large>
                     <img
-                      className="w-auto h-10 sm:h-20 object-contain z-10"
+                      className="w-auto h-10 sm:h-15 object-contain z-10"
                       alt={logo.alt}
                       src={logo.src}
                     />
@@ -106,7 +97,7 @@ export default function Frame() {
                 ) : tierIndex === 1 ? (
                   <LogoRectangle key={logoIndex} medium>
                     <img
-                      className="w-auto h-6 sm:h-12 object-contain z-10"
+                      className="w-auto h-6 sm:h-12 object-contain z-10 bg-black"
                       alt={logo.alt}
                       src={logo.src}
                     />
@@ -114,7 +105,7 @@ export default function Frame() {
                 ) : (
                   <LogoRectangle key={logoIndex}>
                     <img
-                      className="w-auto h-6 sm:h-10 object-contain z-10"
+                      className="w-auto h-6 sm:h-10 max-w-32 object-contain z-10"
                       alt={logo.alt}
                       src={logo.src}
                     />
