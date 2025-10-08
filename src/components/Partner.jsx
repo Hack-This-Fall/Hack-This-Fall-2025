@@ -30,8 +30,8 @@ function LogoRectangle({ children, large, name, medium }) {
         large
           ? "w-[250px] h-auto sm:w-[348px]"
           : medium
-          ? "w-[154px] h-auto sm:w-[245px]"
-          : "w-[154px] h-auto sm:w-[187px]"
+          ? "w-[100px] h-auto sm:w-[245px]"
+          : "w-[100px] h-auto sm:w-[187px]"
       }`}
     >
       {/* Content */}
@@ -60,7 +60,7 @@ export default function Frame() {
         {partnersData.map((tier, tierIndex) => (
           <div
             key={tierIndex}
-            className="sm:gap-4 md:gap-[2rem] flex flex-col items-center justify-center w-full"
+            className="gap-[1rem] md:gap-[2rem] flex flex-col items-center justify-center w-full"
           >
             <h2 className="w-full font-big-shoulders text-gray-600 font-semibold text-base sm:text-2xl text-center tracking-[0] leading-[normal] uppercase ">
               {tier.title}
@@ -68,7 +68,7 @@ export default function Frame() {
 
             <div
               className={`
-                flex flex-wrap items-center justify-center gap-3 sm:gap-8 w-full
+                flex flex-wrap items-center justify-center gap-1 sm:gap-8 w-full
                 ${tierIndex >= 2 ? "max-w-[320px] sm:max-w-full" : ""}
               `}
             >
@@ -84,10 +84,10 @@ export default function Frame() {
                 ) : tierIndex >= 1 ? (
                   <LogoRectangle key={logoIndex} medium name={logo.alt}>
                     <img
-                      className={`sm:h-12 object-contain z-10 ${
+                      className={` object-contain z-10 ${
                         logo.alt === "GitHub"
-                          ? " md:h-[5rem] w-auto"
-                          : " h-6 w-auto"
+                          ? "h-[1.75rem] md:h-[5rem] w-auto"
+                          : "sm:h-12 h-6 w-auto"
                       }`}
                       alt={logo.alt}
                       src={logo.src}
