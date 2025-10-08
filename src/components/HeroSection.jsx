@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section className="pt-8 sm:pt-10">
-      <div className="flex flex-col items-center container mx-auto px-1 sm:px-4 py-16 text-center">
+    <section className="pt-6">
+      <div className="flex flex-col items-center container mx-auto px-1 sm:px-4 pb-16 text-center">
         <img
           src="/assets/hero-section/heading.svg"
           alt="Hero Section Heading"

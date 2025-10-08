@@ -7,7 +7,7 @@ const partnersData = [
   },
   {
     title: 'Diamond',
-    logos: [{ src: '/assets/partners/bhindi.webp', alt: 'Bhindi AI' }],
+    logos: [{ src: '/assets/partners/bhindi.png', alt: 'Bhindi AI' }],
   },
   {
     title: 'Platinum',
@@ -97,7 +97,7 @@ export default function Frame() {
                 ) : tierIndex === 1 ? (
                   <LogoRectangle key={logoIndex} medium>
                     <img
-                      className="w-auto h-6 sm:h-12 object-contain z-10 bg-black"
+                      className="w-auto h-6 sm:h-12 object-contain z-10"
                       alt={logo.alt}
                       src={logo.src}
                     />

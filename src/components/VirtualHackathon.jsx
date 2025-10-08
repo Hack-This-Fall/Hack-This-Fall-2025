@@ -15,8 +15,8 @@ export default function VirtualHackathonHero() {
               className="w-full max-w-[300px] sm:max-w-[520px] h-auto"
               draggable={false}
             />
-            <p className="text-white font-outfit font-normal text-[18px] sm:text-[24px] text-center sm:ml-19 mt-6 max-w-[520px]">
-              Let's turn this November into something epic.
+            <p className="text-white font-outfit font-normal text-[18px] sm:text-[24px] text-center sm:ml-15 mt-6 max-w-[520px]">
+              Let's turn this November into something epic!
             </p>
             {/* Card centered below subtitle on mobile, hidden on desktop */}
             <div className="w-[90%] flex justify-start mt-8 sm:hidden">
@@ -46,7 +46,7 @@ export default function VirtualHackathonHero() {
       <div className="relative z-10 mt-[72px]">
         {/* Grid Pattern Background */}
         <div
-          className="absolute inset-0 w-full h-full z-0"
+          className="absolute inset-0 w-full h-full z-0 border-b border-r"
           style={{
             backgroundImage: `
               linear-gradient(to right, #a78bfa 1px, transparent 1px),
@@ -54,6 +54,7 @@ export default function VirtualHackathonHero() {
             `,
             backgroundSize: '24px 24px',
             opacity: 0.3,
+            borderColor: '#a78bfa',
           }}
         />
         <div className="container mx-auto px-2 sm:px-0 py-[24px] relative z-10">
@@ -63,22 +64,22 @@ export default function VirtualHackathonHero() {
             <div className="flex flex-col sm:flex-row items-center gap-6 w-full sm:w-auto">
               {/* Box 1 SVG */}
               <img
-                src="/assets/virtual-hackathon/virtual-box.svg"
-                alt="Virtual"
-                className="sm:h-[72px] w-[80%] sm:w-[60%] sm:w-auto"
-                draggable={false}
-              />
-              {/* Box 2 SVG */}
-              <img
                 src="/assets/virtual-hackathon/november-box.svg"
                 alt="November"
                 className="sm:h-[72px] w-[80%] sm:w-[60%] sm:w-auto"
                 draggable={false}
               />
-              {/* Box 3 SVG */}
+              {/* Box 2 SVG */}
               <img
                 src="/assets/virtual-hackathon/open-for-all-box.svg"
                 alt="Open for all"
+                className="sm:h-[72px] w-[80%] sm:w-[60%] sm:w-auto"
+                draggable={false}
+              />
+              {/* Box 3 SVG */}
+              <img
+                src="/assets/virtual-hackathon/virtual-box.svg"
+                alt="Virtual"
                 className="sm:h-[72px] w-[80%] sm:w-[60%] sm:w-auto"
                 draggable={false}
               />

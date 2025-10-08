@@ -10,7 +10,7 @@ export default function HackerHouse() {
             <div className="top-bar flex justify-between px-6 pt-20 z-10">
               <div className="box font-big-shoulders flex gap-x-2 items-center z-10">
                 <Image
-                  src={"/assets/hacker-house/location-pin.png"}
+                  src={'/assets/hacker-house/location-pin.png'}
                   width={20}
                   height={20}
                   alt="location"
@@ -19,7 +19,7 @@ export default function HackerHouse() {
               </div>
               <div className="box font-big-shoulders flex gap-x-2 items-center z-10">
                 <Image
-                  src={"/assets/hacker-house/remote.png"}
+                  src={'/assets/hacker-house/remote.png'}
                   width={20}
                   height={20}
                   alt="in person"
@@ -30,7 +30,7 @@ export default function HackerHouse() {
 
             <div className="flex justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <div className="flex flex-col items-center font-big-shoulders">
-                <div className="font-bold text-2xl">The Grand Finale</div>
+                <div className="font-bold text-2xl">The Final Showdown</div>
                 <div className="font-black text-[4rem] text-[#9E34F9]">
                   HACKER HOUSE
                 </div>
@@ -38,20 +38,20 @@ export default function HackerHouse() {
                   &amp; DEMO DAY
                 </div>
                 <div className="font-outfit px-20 text-center max-w-3xl">
-                  This is where the best projects from the month-long sprint
-                  come together in person for mentorship, final polishing, and
-                  to present to our panel of experts. Get ready for an
-                  energy-packed two days of building, networking, and
-                  celebrating innovation!
+                  The top finalists and standout projects from our month-long
+                  hackathon will be invited to the Hacker House & Demo Day in
+                  Bengaluru! Join us in person for mentorship, final touches,
+                  and two action-packed days of building, networking, and
+                  celebrating innovation.
                 </div>
                 <div className="box font-big-shoulders flex gap-x-2 items-center !mt-12">
                   <Image
-                    src={"/assets/hacker-house/calender.png"}
+                    src={'/assets/hacker-house/calender.png'}
                     width={20}
                     height={20}
                     alt="calendar"
                   />
-                  <span className="text-xl font-bold">27-28 DECEMBER</span>
+                  <span className="text-xl font-bold">DEC 27-28, 2025</span>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function HackerHouse() {
         <div className="mx-auto min-h-[100%] w-full">
           <div className="flex flex-col items-center justify-center text-center px-2 py-10 ">
             <div className="font-big-shoulders">
-              <div className="font-bold text-xl">The Grand Finale</div>
+              <div className="font-bold text-xl">The Final Showdown</div>
               <div className="font-black text-6xl text-[#9E34F9] leading-tight">
                 HACKER HOUSE
               </div>
@@ -81,16 +81,17 @@ export default function HackerHouse() {
             </div>
 
             <p className="font-outfit text-sm mt-4 text-[#414651] px-2 tracking-wider">
-              This is where the best projects from the month-long sprint come
-              together in person for mentorship, final polishing, and to present
-              to our panel of experts. Get ready for an energy-packed two days
-              of building, networking, and celebrating innovation!
+              The top finalists and standout projects from our month-long
+              hackathon will be invited to the Hacker House & Demo Day in
+              Bengaluru! Join us in person for mentorship, final touches, and
+              two action-packed days of building, networking, and celebrating
+              innovation.
             </p>
 
             <div className="flex justify-center gap-x-4 w-full text-sm font-bold font-big-shoulders !mt-8">
               <div className="box-mobile flex items-center gap-2">
                 <Image
-                  src={"/assets/hacker-house/location-pin.png"}
+                  src={'/assets/hacker-house/location-pin.png'}
                   width={20}
                   height={20}
                   alt="location"
@@ -99,7 +100,7 @@ export default function HackerHouse() {
               </div>
               <div className="box-mobile flex items-center gap-2">
                 <Image
-                  src={"/assets/hacker-house/remote.png"}
+                  src={'/assets/hacker-house/remote.png'}
                   width={20}
                   height={20}
                   alt="in person"
@@ -109,7 +110,7 @@ export default function HackerHouse() {
             </div>
             <div className="box-mobile flex items-center gap-2 font-big-shoulders text-sm font-bold !mt-4">
               <Image
-                src={"/assets/hacker-house/calender.png"}
+                src={'/assets/hacker-house/calender.png'}
                 width={20}
                 height={20}
                 alt="calendar"

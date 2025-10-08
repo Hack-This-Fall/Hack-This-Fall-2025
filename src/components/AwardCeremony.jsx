@@ -9,15 +9,15 @@ export default function AwardCeremony() {
           <div className="flex flex-col items-center">
             <div className="relative flex flex-col">
               <img
-                src={"/assets/award-ceremony/main.png"}
+                src={'/assets/award-ceremony/main.svg'}
                 className="mx-auto -mt-14"
                 alt="Award Ceremony"
               />
-              <p className="text-right w-[80%] self-end text-white font-outline mt-6 text-2xl">
+              <p className="text-right w-[70%] self-end text-white font-outline mt-6 text-xl">
                 Five years strong, and we're just getting started!
                 <br />
-                This ultimate bash is our chance to thank the
-                <br /> people who truly brought this event to life.
+                This ultimate bash is our chance to award the winning builders
+                and thank the people who truly brought this community to life.
               </p>
             </div>
           </div>
@@ -29,18 +29,18 @@ export default function AwardCeremony() {
         <div className="mx-auto min-h-[100%] w-full">
           <div className="flex flex-col items-center justify-center text-center px-6">
             <div>
-              <img src="/assets/award-ceremony/mob-1.png" />
+              <img src="/assets/award-ceremony/mob-1.svg" />
             </div>
 
             <div className="text-left w-[92%] self-start ml-2 text-white font-outline my-6 text-[26px] leading-tight font-regular">
               Five years strong, and we're just getting started! This ultimate
-              bash is our chance to thank the people who truly brought this
-              event to life.
+              bash is our chance to award the winning builders and thank the
+              people who truly brought this community to life.
             </div>
 
             <div>
               <img
-                src="/assets/award-ceremony/mob-2.png"
+                src="/assets/award-ceremony/mob-2.svg"
                 className="w-[75%] mt-6"
               />
             </div>

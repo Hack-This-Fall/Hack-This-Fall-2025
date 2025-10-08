@@ -8,35 +8,35 @@ const cities = [
   {
     name: 'Mumbai',
     subtitle: 'City of Dreams',
-    date: '08.11.25',
+    date: 'Nov 8, 2025',
     image: '/assets/build-station/cities/mumbai.png',
     link: 'https://luma.com/6kk2l88e',
   },
   {
     name: 'Ahmedabad',
     subtitle: 'City of Heritage',
-    date: '09.11.25',
+    date: 'Nov 9, 2025',
     image: '/assets/build-station/cities/ahmedabad.png',
     link: 'https://luma.com/wghku6rh',
   },
   {
     name: 'Delhi',
     subtitle: 'City of Hearts',
-    date: '15.11.25',
+    date: 'Nov 15, 2025',
     image: '/assets/build-station/cities/delhi.png',
     link: 'https://luma.com/hg0g2gwa',
   },
   {
     name: 'Kolkata',
     subtitle: 'City of Joy',
-    date: '16.11.25',
+    date: 'Nov 16, 2025',
     image: '/assets/build-station/cities/kolkata.png',
     link: 'https://luma.com/g2r1hz70',
   },
   {
     name: 'Hyderabad',
     subtitle: 'City of Pearls',
-    date: '22.11.25',
+    date: 'Nov 22, 2025',
     image: '/assets/build-station/cities/hyderabad.png',
     link: 'https://luma.com/utv77z3v',
   },
@@ -45,7 +45,7 @@ const cities = [
 export default function BuildStation() {
   return (
     <section className="w-full mx-auto bg-[linear-gradient(180deg,rgba(157,51,251,1)_0%,rgba(255,150,56,1)_100%)] overflow-hidden">
-      <div className="w-full container relative mx-auto py-24 sm:px-[108px] flex flex-col items-center gap-[72px]">
+      <div className="w-full container relative mx-auto py-24 flex flex-col items-center gap-[72px]">
         <header className="flex flex-col w-full max-w-[564.05px] items-center gap-6 relative z-10">
           <div className="relative w-full">
             <img
@@ -57,7 +57,7 @@ export default function BuildStation() {
 
           <p className="relative self-stretch font-outfit font-normal text-white text-2xl text-center tracking-[0] leading-[normal]">
             Bring hackathon energy to life at Build Stations near you!
-            <br /> Step out of the screen to connect with builders and
+            Step out of the screen to connect with builders and
             collaborate in person.
           </p>
         </header>
@@ -68,7 +68,7 @@ export default function BuildStation() {
             {cities.slice(0, 3).map((city, index) => (
               <Card
                 key={index}
-                className="flex flex-col w-[338.18px] items-start gap-8 p-6 bg-white border-[1.5px] border-solid border-black rounded-none shadow-none"
+                className="flex flex-col items-start gap-8 p-6 bg-white border-[1.5px] border-solid border-black rounded-none shadow-none"
               >
                 <CardContent className="flex flex-col items-start gap-6 p-0 w-full">
                   <img
@@ -125,7 +125,7 @@ export default function BuildStation() {
             {cities.slice(3, 5).map((city, index) => (
               <Card
                 key={index + 3}
-                className="flex flex-col w-[338.18px] items-start gap-8 p-6 bg-white border-[1.5px] border-solid border-black rounded-none shadow-none"
+                className="flex flex-col items-start gap-8 p-6 bg-white border-[1.5px] border-solid border-black rounded-none shadow-none"
               >
                 <CardContent className="flex flex-col items-start gap-6 p-0 w-full">
                   <img
