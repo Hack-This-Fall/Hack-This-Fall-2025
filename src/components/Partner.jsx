@@ -12,9 +12,9 @@ const partnersData = [
   {
     title: "Platinum",
     logos: [
+      { src: "/assets/partners/devfolio.png", alt: "Devfolio" },
       { src: "/assets/partners/github.png", alt: "GitHub" },
       { src: "/assets/partners/lingo.svg", alt: "Lingo Dev" },
-      { src: "/assets/partners/devfolio.png", alt: "Devfolio" },
     ],
   },
   {
@@ -23,86 +23,17 @@ const partnersData = [
   },
 ];
 
-function LogoRectangle({ children, large, medium }) {
+function LogoRectangle({ children, large, name, medium }) {
   return (
     <div
       className={`relative flex items-center justify-center ${
         large
-          ? "w-[250px] h-[90px] sm:w-[348px] sm:h-[124px]"
+          ? "w-[250px] h-auto sm:w-[348px]"
           : medium
-          ? "w-[154px] h-[55px] sm:w-[245px] sm:h-[88px]"
-          : "w-[154px] h-[55px] sm:w-[187px] sm:h-[67px]"
+          ? "w-[154px] h-auto sm:w-[245px]"
+          : "w-[154px] h-auto sm:w-[187px]"
       }`}
     >
-      {/* Corners */}
-      <div
-        className={`absolute ${
-          large
-            ? "top-2 left-2 sm:top-3 sm:left-3"
-            : medium
-            ? "top-2 left-2 sm:top-2.5 sm:left-2.5"
-            : "top-2 left-2"
-        } ${
-          large
-            ? "w-6 h-6 sm:w-8 sm:h-8"
-            : medium
-            ? "w-5 h-5 sm:w-6 sm:h-6"
-            : "w-5 h-5"
-        }`}
-      >
-        <div className="w-full h-full"></div>
-      </div>
-      <div
-        className={`absolute ${
-          large
-            ? "top-2 right-2 sm:top-3 sm:right-3"
-            : medium
-            ? "top-2 right-2 sm:top-2.5 sm:right-2.5"
-            : "top-2 right-2"
-        } ${
-          large
-            ? "w-6 h-6 sm:w-8 sm:h-8"
-            : medium
-            ? "w-5 h-5 sm:w-6 sm:h-6"
-            : "w-5 h-5"
-        }`}
-      >
-        <div className="w-full h-full"></div>
-      </div>
-      <div
-        className={`absolute ${
-          large
-            ? "bottom-2 left-2 sm:bottom-3 sm:left-3"
-            : medium
-            ? "bottom-2 left-2 sm:bottom-2.5 sm:left-2.5"
-            : "bottom-2 left-2"
-        } ${
-          large
-            ? "w-6 h-6 sm:w-8 sm:h-8"
-            : medium
-            ? "w-5 h-5 sm:w-6 sm:h-6"
-            : "w-5 h-5"
-        }`}
-      >
-        <div className="w-full h-full"></div>
-      </div>
-      <div
-        className={`absolute ${
-          large
-            ? "bottom-2 right-2 sm:bottom-3 sm:right-3"
-            : medium
-            ? "bottom-2 right-2 sm:bottom-2.5 sm:right-2.5"
-            : "bottom-2 right-2"
-        } ${
-          large
-            ? "w-6 h-6 sm:w-8 sm:h-8"
-            : medium
-            ? "w-5 h-5 sm:w-6 sm:h-6"
-            : "w-5 h-5"
-        }`}
-      >
-        <div className="w-full h-full"></div>
-      </div>
       {/* Content */}
       <div className="flex items-center justify-center z-10 px-2">
         {children}
@@ -129,7 +60,7 @@ export default function Frame() {
         {partnersData.map((tier, tierIndex) => (
           <div
             key={tierIndex}
-            className="gap-2 sm:gap-4 flex flex-col items-center justify-center w-full"
+            className="sm:gap-4 md:gap-[2rem] flex flex-col items-center justify-center w-full"
           >
             <h2 className="w-full font-big-shoulders text-gray-600 font-semibold text-base sm:text-2xl text-center tracking-[0] leading-[normal] uppercase ">
               {tier.title}
@@ -143,17 +74,21 @@ export default function Frame() {
             >
               {tier.logos.map((logo, logoIndex) =>
                 tierIndex === 0 ? (
-                  <LogoRectangle key={logoIndex} large>
+                  <LogoRectangle key={logoIndex} large name={logo.alt}>
                     <img
                       className="w-auto h-10 sm:h-15 object-contain z-10"
                       alt={logo.alt}
                       src={logo.src}
                     />
                   </LogoRectangle>
-                ) : tierIndex === 1 ? (
-                  <LogoRectangle key={logoIndex} medium>
+                ) : tierIndex >= 1 ? (
+                  <LogoRectangle key={logoIndex} medium name={logo.alt}>
                     <img
-                      className="w-auto h-6 sm:h-12 object-contain z-10"
+                      className={`sm:h-12 object-contain z-10 ${
+                        logo.alt === "GitHub"
+                          ? " md:h-[5rem] w-auto"
+                          : " h-6 w-auto"
+                      }`}
                       alt={logo.alt}
                       src={logo.src}
                     />
