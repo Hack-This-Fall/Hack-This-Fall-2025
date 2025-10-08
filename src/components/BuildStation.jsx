@@ -55,7 +55,7 @@ export default function BuildStation() {
             />
           </div>
 
-          <p className="relative self-stretch font-outfit font-normal text-white text-2xl text-center tracking-[0] leading-[normal]">
+          <p className="relative self-stretch font-outfit font-normal text-white text-2xl text-center tracking-[0] leading-[normal] px-5 sm:px-0">
             Bring hackathon energy to life at Build Stations near you!
             Step out of the screen to connect with builders and
             collaborate in person.

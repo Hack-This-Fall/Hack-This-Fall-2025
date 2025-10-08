@@ -8,7 +8,7 @@ export default function VirtualHackathonHero() {
         {/* Top Section: Headline, Subtitle, and Card */}
         <div className="flex flex-col sm:flex-row items-center md:items-start justify-between gap-10 sm:gap-16 pt-10 pb-0 relative">
           {/* Left: SVG Heading and subtitle */}
-          <div className="flex-1 flex flex-col sm:items-start sm:ml-16">
+          <div className="flex-1 flex flex-col items-center sm:items-start sm:ml-16">
             <img
               src="/assets/virtual-hackathon/your-idea.svg"
               alt="Your Idea A MONTH TO BUILD IT"

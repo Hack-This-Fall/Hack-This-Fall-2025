@@ -115,7 +115,7 @@ export default function HackerHouse() {
                 height={20}
                 alt="calendar"
               />
-              <span>27-28 DECEMBER</span>
+              <span>DEC 27-28, 2025</span>
             </div>
           </div>
         </div>

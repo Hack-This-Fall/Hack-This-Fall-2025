@@ -48,7 +48,7 @@ export default function StickyFooter() {
             </div>
           </div>
 
-          <div className="flex flex-col w-full md:px-20 md:flex-row justify-between items-center mt-[3rem] md:mt-[7rem] mb-[3rem]">
+          <div className="flex flex-col w-full px-10 md:px-20 md:flex-row justify-between items-center mt-[3rem] md:mt-[7rem] mb-[3rem]">
             <img src="/assets/logo-white.svg" alt="logo" className="w-[70%] md:w-[10rem]" />
             <div className="flex flex-col justify-between items-center md:items-end mt-12 md:mt-0 h-full gap-y-4 w-full md:w-auto">
               <div className="flex flex-row items-center w-full justify-between md:justify-end gap-x-auto md:gap-x-6 w-[70%] md:w-unset mx-auto">
