@@ -20,7 +20,7 @@ const cities = [
     link: 'https://luma.com/wghku6rh',
   },
   {
-    name: 'Delhi',
+    name: 'Delhi NCR',
     subtitle: 'City of Hearts',
     date: 'Nov 15, 2025',
     image: '/assets/build-station/cities/delhi.png',

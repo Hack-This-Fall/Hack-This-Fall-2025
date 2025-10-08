@@ -1,10 +1,21 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="pt-6">
-      <div className="flex flex-col items-center container mx-auto px-1 sm:px-4 pb-16 text-center">
+    <section className="min-h-[80vh] flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center container mx-auto px-1 sm:px-4 text-center">
+        <div className="flex items-center pb-12">
+          <Image
+            src="/assets/logo.png"
+            alt="Hack This Fall Logo"
+            width={120}
+            height={54}
+            className="h-[54px] w-[120px] object-cover"
+            priority
+          />
+        </div>
         <img
           src="/assets/hero-section/heading.svg"
           alt="Hero Section Heading"

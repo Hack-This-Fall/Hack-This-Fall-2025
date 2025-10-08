@@ -5,11 +5,12 @@ import HackerHouse from "@/components/HackerHouse";
 import AwardCeremony from "@/components/AwardCeremony";
 import VirtualHackathon from "../components/VirtualHackathon";
 import Partners from "@/components/Partner";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         <HeroSection />
         <VirtualHackathon />
@@ -18,6 +19,7 @@ export default function Home() {
         <AwardCeremony />
         <Partners />
       </main>
+      <Footer />
     </div>
   );
 }
