@@ -89,7 +89,7 @@ export default function Frame() {
                           ? 'h-[1.75rem] md:h-[5rem] w-auto'
                           : 'sm:h-12 h-6 w-auto'
                       } ${
-                        logo.alt === 'Bhindi' && 'h-[1.5rem] md:h-[4rem] w-auto'
+                        logo.alt === 'Bhindi' && 'h-[1.8rem] md:h-[5.2rem] w-auto'
                       }`}
                       alt={logo.alt}
                       src={logo.src}
