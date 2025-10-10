@@ -1,25 +1,25 @@
-import React from "react";
+import React from 'react';
 
 const partnersData = [
   {
-    title: "Title",
-    logos: [{ src: "/assets/partners/vultr.svg", alt: "Vultr" }],
+    title: 'Title',
+    logos: [{ src: '/assets/partners/vultr.svg', alt: 'Vultr' }],
   },
   {
-    title: "Diamond",
-    logos: [{ src: "/assets/partners/bhindi.png", alt: "Bhindi AI" }],
+    title: 'Diamond',
+    logos: [{ src: '/assets/partners/bhindi.png', alt: 'Bhindi' }],
   },
   {
-    title: "Platinum",
+    title: 'Platinum',
     logos: [
-      { src: "/assets/partners/devfolio.png", alt: "Devfolio" },
-      { src: "/assets/partners/github.png", alt: "GitHub" },
-      { src: "/assets/partners/lingo.svg", alt: "Lingo Dev" },
+      { src: '/assets/partners/devfolio.png', alt: 'Devfolio' },
+      { src: '/assets/partners/github.png', alt: 'GitHub' },
+      { src: '/assets/partners/lingo.svg', alt: 'Lingo Dev' },
     ],
   },
   {
-    title: "Gold",
-    logos: [{ src: "/assets/partners/apify.png", alt: "Apify" }],
+    title: 'Gold',
+    logos: [{ src: '/assets/partners/apify.png', alt: 'Apify' }],
   },
 ];
 
@@ -28,10 +28,10 @@ function LogoRectangle({ children, large, name, medium }) {
     <div
       className={`relative flex items-center justify-center ${
         large
-          ? "w-[250px] h-auto sm:w-[348px]"
+          ? 'w-[250px] h-auto sm:w-[348px]'
           : medium
-          ? "w-[100px] h-auto sm:w-[245px]"
-          : "w-[100px] h-auto sm:w-[187px]"
+          ? 'w-[100px] h-auto sm:w-[245px]'
+          : 'w-[100px] h-auto sm:w-[187px]'
       }`}
     >
       {/* Content */}
@@ -69,7 +69,7 @@ export default function Frame() {
             <div
               className={`
                 flex flex-wrap items-center justify-center gap-1 sm:gap-8 w-full
-                ${tierIndex >= 2 ? "max-w-[320px] sm:max-w-full" : ""}
+                ${tierIndex >= 2 ? 'max-w-[320px] sm:max-w-full' : ''}
               `}
             >
               {tier.logos.map((logo, logoIndex) =>
@@ -85,9 +85,11 @@ export default function Frame() {
                   <LogoRectangle key={logoIndex} medium name={logo.alt}>
                     <img
                       className={` object-contain z-10 ${
-                        logo.alt === "GitHub"
-                          ? "h-[1.75rem] md:h-[5rem] w-auto"
-                          : "sm:h-12 h-6 w-auto"
+                        logo.alt === 'GitHub'
+                          ? 'h-[1.75rem] md:h-[5rem] w-auto'
+                          : 'sm:h-12 h-6 w-auto'
+                      } ${
+                        logo.alt === 'Bhindi' && 'h-[1.5rem] md:h-[4rem] w-auto'
                       }`}
                       alt={logo.alt}
                       src={logo.src}
@@ -101,7 +103,7 @@ export default function Frame() {
                       src={logo.src}
                     />
                   </LogoRectangle>
-                )
+                ),
               )}
             </div>
           </div>
