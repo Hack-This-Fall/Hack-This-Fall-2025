@@ -5,10 +5,10 @@ const partnersData = [
     title: "Title",
     logos: [{ src: "/assets/partners/vultr.svg", alt: "Vultr" }],
   },
-  // {
-  //   title: "Diamond",
-  //   logos: [{ src: "/assets/partners/bhindi.png", alt: "Bhindi AI" }],
-  // },
+  {
+    title: "Diamond",
+    logos: [{ src: "/assets/partners/bhindi.png", alt: "Bhindi AI" }],
+  },
   {
     title: "Platinum",
     logos: [
