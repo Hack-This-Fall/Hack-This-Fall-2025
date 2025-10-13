@@ -3,23 +3,23 @@ import React from 'react';
 const partnersData = [
   {
     title: 'Title',
-    logos: [{ src: '/assets/partners/vultr.svg', alt: 'Vultr' }],
+    logos: [{ src: '/assets/partners/vultr.svg', alt: 'Vultr', url: 'https://www.vultr.com/' }],
   },
   {
     title: 'Diamond',
-    logos: [{ src: '/assets/partners/bhindi.png', alt: 'Bhindi' }],
+    logos: [{ src: '/assets/partners/bhindi.png', alt: 'Bhindi', url: 'https://anannas.ai/' }],
   },
   {
     title: 'Platinum',
     logos: [
-      { src: '/assets/partners/devfolio.png', alt: 'Devfolio' },
-      { src: '/assets/partners/github.png', alt: 'GitHub' },
-      { src: '/assets/partners/lingo.svg', alt: 'Lingo Dev' },
+      { src: '/assets/partners/devfolio.png', alt: 'Devfolio', url: 'https://devfolio.co/home' },
+      { src: '/assets/partners/github.png', alt: 'GitHub', url: 'https://github.com/education' },
+      { src: '/assets/partners/lingo.svg', alt: 'Lingo Dev', url: 'https://lingo.dev/en' },
     ],
   },
   {
     title: 'Gold',
-    logos: [{ src: '/assets/partners/apify.png', alt: 'Apify' }],
+    logos: [{ src: '/assets/partners/apify.png', alt: 'Apify', url: 'https://apify.com/' }],
   },
 ];
 
@@ -75,33 +75,39 @@ export default function Frame() {
               {tier.logos.map((logo, logoIndex) =>
                 tierIndex === 0 ? (
                   <LogoRectangle key={logoIndex} large name={logo.alt}>
-                    <img
-                      className="w-auto h-10 sm:h-15 object-contain z-10"
-                      alt={logo.alt}
-                      src={logo.src}
-                    />
+                    <a href={logo.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                      <img
+                        className="w-auto h-10 sm:h-15 object-contain z-10"
+                        alt={logo.alt}
+                        src={logo.src}
+                      />
+                    </a>
                   </LogoRectangle>
                 ) : tierIndex >= 1 ? (
                   <LogoRectangle key={logoIndex} medium name={logo.alt}>
-                    <img
-                      className={` object-contain z-10 ${
-                        logo.alt === 'GitHub'
-                          ? 'h-[1.75rem] md:h-[5rem] w-auto'
-                          : 'sm:h-12 h-6 w-auto'
-                      } ${
-                        logo.alt === 'Bhindi' && 'h-[1.8rem] md:h-[5.2rem] w-auto'
-                      }`}
-                      alt={logo.alt}
-                      src={logo.src}
-                    />
+                    <a href={logo.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                      <img
+                        className={` object-contain z-10 ${
+                          logo.alt === 'GitHub'
+                            ? 'h-[1.75rem] md:h-[5rem] w-auto'
+                            : 'sm:h-12 h-6 w-auto'
+                        } ${
+                          logo.alt === 'Bhindi' && 'h-[1.8rem] md:h-[5.2rem] w-auto'
+                        }`}
+                        alt={logo.alt}
+                        src={logo.src}
+                      />
+                    </a>
                   </LogoRectangle>
                 ) : (
                   <LogoRectangle key={logoIndex}>
-                    <img
-                      className="w-auto h-6 sm:h-10 max-w-32 object-contain z-10"
-                      alt={logo.alt}
-                      src={logo.src}
-                    />
+                    <a href={logo.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                      <img
+                        className="w-auto h-6 sm:h-10 max-w-32 object-contain z-10"
+                        alt={logo.alt}
+                        src={logo.src}
+                      />
+                    </a>
                   </LogoRectangle>
                 ),
               )}
