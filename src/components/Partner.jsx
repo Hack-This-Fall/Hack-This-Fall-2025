@@ -1,25 +1,49 @@
-import React from 'react';
+import React from "react";
 
 const partnersData = [
   {
-    title: 'Title',
-    logos: [{ src: '/assets/partners/vultr.svg', alt: 'Vultr', url: 'https://www.vultr.com/' }],
-  },
-  {
-    title: 'Diamond',
-    logos: [{ src: '/assets/partners/bhindi.png', alt: 'Bhindi', url: 'https://anannas.ai/' }],
-  },
-  {
-    title: 'Platinum',
+    title: "Title",
     logos: [
-      { src: '/assets/partners/devfolio.png', alt: 'Devfolio', url: 'https://devfolio.co/home' },
-      { src: '/assets/partners/github.png', alt: 'GitHub', url: 'https://github.com/education' },
-      { src: '/assets/partners/lingo.svg', alt: 'Lingo Dev', url: 'https://lingo.dev/en' },
+      {
+        src: "/assets/partners/vultr.svg",
+        alt: "Vultr",
+        url: "https://www.vultr.com/",
+      },
+    ],
+  },
+  // {
+  //   title: "Diamond",
+  //   logos: [{ src: "/assets/partners/bhindi.png", alt: "Bhindi AI" }],
+  // },
+  {
+    title: "Platinum",
+    logos: [
+      {
+        src: "/assets/partners/devfolio.png",
+        alt: "Devfolio",
+        url: "https://devfolio.co/home",
+      },
+      {
+        src: "/assets/partners/github.png",
+        alt: "GitHub",
+        url: "https://github.com/education",
+      },
+      {
+        src: "/assets/partners/lingo.svg",
+        alt: "Lingo Dev",
+        url: "https://lingo.dev/en",
+      },
     ],
   },
   {
-    title: 'Gold',
-    logos: [{ src: '/assets/partners/apify.png', alt: 'Apify', url: 'https://apify.com/' }],
+    title: "Gold",
+    logos: [
+      {
+        src: "/assets/partners/apify.png",
+        alt: "Apify",
+        url: "https://apify.com/",
+      },
+    ],
   },
 ];
 
@@ -28,10 +52,10 @@ function LogoRectangle({ children, large, name, medium }) {
     <div
       className={`relative flex items-center justify-center ${
         large
-          ? 'w-[250px] h-auto sm:w-[348px]'
+          ? "w-[250px] h-auto sm:w-[348px]"
           : medium
-          ? 'w-[100px] h-auto sm:w-[245px]'
-          : 'w-[100px] h-auto sm:w-[187px]'
+          ? "w-[100px] h-auto sm:w-[245px]"
+          : "w-[100px] h-auto sm:w-[187px]"
       }`}
     >
       {/* Content */}
@@ -69,13 +93,18 @@ export default function Frame() {
             <div
               className={`
                 flex flex-wrap items-center justify-center gap-1 sm:gap-8 w-full
-                ${tierIndex >= 2 ? 'max-w-[320px] sm:max-w-full' : ''}
+                ${tierIndex >= 2 ? "max-w-[320px] sm:max-w-full" : ""}
               `}
             >
               {tier.logos.map((logo, logoIndex) =>
                 tierIndex === 0 ? (
                   <LogoRectangle key={logoIndex} large name={logo.alt}>
-                    <a href={logo.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                    <a
+                      href={logo.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
                       <img
                         className="w-auto h-10 sm:h-15 object-contain z-10"
                         alt={logo.alt}
@@ -85,14 +114,20 @@ export default function Frame() {
                   </LogoRectangle>
                 ) : tierIndex >= 1 ? (
                   <LogoRectangle key={logoIndex} medium name={logo.alt}>
-                    <a href={logo.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                    <a
+                      href={logo.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
                       <img
                         className={` object-contain z-10 ${
-                          logo.alt === 'GitHub'
-                            ? 'h-[1.75rem] md:h-[5rem] w-auto'
-                            : 'sm:h-12 h-6 w-auto'
+                          logo.alt === "GitHub"
+                            ? "h-[1.75rem] md:h-[5rem] w-auto"
+                            : "sm:h-12 h-6 w-auto"
                         } ${
-                          logo.alt === 'Bhindi' && 'h-[1.8rem] md:h-[5.2rem] w-auto'
+                          logo.alt === "Bhindi" &&
+                          "h-[1.8rem] md:h-[5.2rem] w-auto"
                         }`}
                         alt={logo.alt}
                         src={logo.src}
@@ -101,7 +136,12 @@ export default function Frame() {
                   </LogoRectangle>
                 ) : (
                   <LogoRectangle key={logoIndex}>
-                    <a href={logo.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                    <a
+                      href={logo.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
                       <img
                         className="w-auto h-6 sm:h-10 max-w-32 object-contain z-10"
                         alt={logo.alt}
@@ -109,7 +149,7 @@ export default function Frame() {
                       />
                     </a>
                   </LogoRectangle>
-                ),
+                )
               )}
             </div>
           </div>
