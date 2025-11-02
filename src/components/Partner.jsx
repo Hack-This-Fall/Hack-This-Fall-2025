@@ -2,12 +2,12 @@ import React from "react";
 
 const partnersData = [
   {
-    title: "Title",
+    title: 'Title',
     logos: [
       {
-        src: "/assets/partners/vultr.svg",
-        alt: "Vultr",
-        url: "https://www.vultr.com/",
+        src: '/assets/partners/vultr.svg',
+        alt: 'Vultr',
+        url: 'https://www.vultr.com/',
       },
     ],
   },
@@ -16,32 +16,37 @@ const partnersData = [
   //   logos: [{ src: "/assets/partners/bhindi.png", alt: "Bhindi AI" }],
   // },
   {
-    title: "Platinum",
+    title: 'Platinum',
     logos: [
       {
-        src: "/assets/partners/devfolio.png",
-        alt: "Devfolio",
-        url: "https://devfolio.co/home",
+        src: '/assets/partners/devfolio.png',
+        alt: 'Devfolio',
+        url: 'https://devfolio.co/home',
       },
       {
-        src: "/assets/partners/github.png",
-        alt: "GitHub",
-        url: "https://github.com/education",
+        src: '/assets/partners/github.png',
+        alt: 'GitHub',
+        url: 'https://github.com/education',
       },
       {
-        src: "/assets/partners/lingo.svg",
-        alt: "Lingo Dev",
-        url: "https://lingo.dev/en",
+        src: '/assets/partners/lingo.svg',
+        alt: 'Lingo Dev',
+        url: 'https://lingo.dev/en',
       },
     ],
   },
   {
-    title: "Gold",
+    title: 'Gold',
     logos: [
       {
-        src: "/assets/partners/apify.png",
-        alt: "Apify",
-        url: "https://apify.com/",
+        src: '/assets/partners/apify.png',
+        alt: 'Apify',
+        url: 'https://apify.com/',
+      },
+      {
+        src: '/assets/partners/coderabbit.png',
+        alt: 'Coderabbit',
+        url: 'https://www.coderabbit.ai/about-us',
       },
     ],
   },
