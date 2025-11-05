@@ -50,6 +50,21 @@ const partnersData = [
       },
     ],
   },
+  {
+    title: 'Ecosystem Partners',
+    logos: [
+      {
+        src: '/assets/partners/azdev.svg',
+        alt: 'Azdev',
+        url: 'https://azdev.reskilll.com/',
+      },
+      {
+        src: '/assets/partners/reskill.png',
+        alt: 'Reskill',
+        url: 'https://reskilll.com/',
+      },
+    ],
+  },
 ];
 
 function LogoRectangle({ children, large, name, medium }) {
