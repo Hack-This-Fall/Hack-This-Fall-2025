@@ -59,7 +59,7 @@ const partnersData = [
         url: 'https://azdev.reskilll.com/',
       },
       {
-        src: '/assets/partners/reskill.png',
+        src: '/assets/partners/reskill.svg',
         alt: 'Reskill',
         url: 'https://reskilll.com/',
       },
