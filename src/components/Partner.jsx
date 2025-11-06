@@ -51,7 +51,7 @@ const partnersData = [
     ],
   },
   {
-    title: 'Ecosystem Partners',
+    title: 'Ecosystem',
     logos: [
       {
         src: '/assets/partners/azdev.svg',
