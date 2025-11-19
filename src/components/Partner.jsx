@@ -65,6 +65,16 @@ const partnersData = [
       },
     ],
   },
+  {
+    title: 'Media',
+    logos: [
+      {
+        src: '/assets/partners/orblinn.png',
+        alt: 'Orblinn',
+        url: 'https://www.orblinn.com',
+      },
+    ],
+  },
 ];
 
 function LogoRectangle({ children, large, name, medium }) {
