@@ -75,6 +75,16 @@ const partnersData = [
       },
     ],
   },
+  {
+    title: 'Energy',
+    logos: [
+      {
+        src: '/assets/partners/stroom.png',
+        alt: 'Stroom',
+        url: 'https://www.stroom.in',
+      },
+    ],
+  },
 ];
 
 function LogoRectangle({ children, large, name, medium }) {
