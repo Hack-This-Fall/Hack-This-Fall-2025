@@ -85,6 +85,26 @@ const partnersData = [
       },
     ],
   },
+  {
+    title: 'Sustainability',
+    logos: [
+      {
+        src: '/assets/partners/lamhenow.png',
+        alt: 'Lamhenow',
+        url: 'https://www.lamhenow.com',
+      },
+    ],
+  },
+  {
+    title: 'Ecosystem',
+    logos: [
+      {
+        src: '/assets/partners/zoworld.png',
+        alt: 'Zo World',
+        url: 'https://zo.xyz',
+      },
+    ],
+  },
 ];
 
 function LogoRectangle({ children, large, name, medium }) {
