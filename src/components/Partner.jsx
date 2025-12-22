@@ -54,6 +54,11 @@ const partnersData = [
     title: 'Ecosystem',
     logos: [
       {
+        src: '/assets/partners/zoworld.png',
+        alt: 'Zo World',
+        url: 'https://zo.xyz',
+      },
+      {
         src: '/assets/partners/azdev.svg',
         alt: 'Azdev',
         url: 'https://azdev.reskilll.com/',
@@ -92,16 +97,6 @@ const partnersData = [
         src: '/assets/partners/lamhenow.png',
         alt: 'Lamhenow',
         url: 'https://www.lamhenow.com',
-      },
-    ],
-  },
-  {
-    title: 'Ecosystem',
-    logos: [
-      {
-        src: '/assets/partners/zoworld.png',
-        alt: 'Zo World',
-        url: 'https://zo.xyz',
       },
     ],
   },
